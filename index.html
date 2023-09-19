@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amaral Tech- Assistência Tecnica</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <img src="logotipo.png" alt="logo empresa Amaral Tech">
-        <nav>
-            <ul>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="home">
+        <nav class="navbar navbar-expand-lg bg-info-subtle">
+            <div class="container">
+              <a class="navbar-brand" href=""><img src="assets/logotipo.png" alt="" width="190" height="90"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#servicos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Serviços
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     
     <section id="banner">
@@ -22,16 +39,20 @@
         <p>Serviços de limpeza e higienização de ar-condicionado para melhorar a qualidade do ar que você respira.</p>
         <a href="#contato" class="cta-button">Solicite um Orçamento</a>
     </section>
+
+
+    <section id="title-card">
+        <h2>Nossos Serviços</h2>
+    </section>
     
     <section id="servicos">
-        <h2>Nossos Serviços</h2>
         <div class="service">
-            <img src="https://imgs.search.brave.com/MHw6GAAvhI3CdMKYOE-avOKxHn1YHBAPJ7FHDcGe2dQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV85ODEx/MDItTUxBNzA5ODEz/MjUwMjVfMDgyMDIz/LU9PLndlYnA" alt="Limpeza de Filtros">
+            <img src="https://imgs.search.brave.com/MHw6GAAvhI3CdMKYOE-avOKxHn1YHBAPJ7FHDcGe2dQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV85ODEx/MDItTUxBNzA5ODEz/MjUwMjVfMDgyMDIz/LU9PLndlYnA" alt="Limpeza de Filtros" width="500" height="300">
             <h3>Limpeza de Filtros</h3>
             <p>Removemos e limpamos os filtros do seu ar-condicionado para melhorar a eficiência e a qualidade do ar.</p>
         </div>
         <div class="service">
-            <img src="https://imgs.search.brave.com/ktGjSmt4m8mivI9MCM7ajgm9IIb5LQ2aF53C7tVXC34/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hcmNv/bmRpY2lvbmFkb2Fy/YXJhcXVhcmEuY29t/LmJyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIxLzAzL2xpbXBl/emEtZGUtYXItY29u/ZGljaW9uYWRvLnBu/Zw" alt="Higienização">
+            <img src="https://imgs.search.brave.com/ktGjSmt4m8mivI9MCM7ajgm9IIb5LQ2aF53C7tVXC34/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hcmNv/bmRpY2lvbmFkb2Fy/YXJhcXVhcmEuY29t/LmJyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIxLzAzL2xpbXBl/emEtZGUtYXItY29u/ZGljaW9uYWRvLnBu/Zw" alt="Higienização" width="500" height="300">
             <h3>Higienização</h3>
             <p>Realizamos a higienização completa do sistema, eliminando bactérias, fungos e maus odores.</p>
         </div>
@@ -52,7 +73,8 @@
     </section>
     
     <footer>
-        <p>&copy; 2023 Empresa de Limpeza & Higienização de Ar-Condicionado</p>
+        <p>&copy; <strong>2023 AmaralTech </strong>
+            CNPJ: 00.000.000/0000-00</p>
     </footer>
 
     <script src="script.js"></script>

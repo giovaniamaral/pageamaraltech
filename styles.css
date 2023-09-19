@@ -4,42 +4,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-header {
-  background-color:rgb(17, 174, 236);
-  color: #055b83;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header img {
-  margin: 0;
-  width: 150px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-around;
-  
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
 :root {
   --button-color: #1264df;
   --button-rover: #02265c;
@@ -81,15 +45,18 @@ nav a {
 }
 
 /* Estilos dos serviços */
+#title-card h2 {
+  display: flex;
+ justify-content: center;
+}
+
 #servicos {
   background-color: #f4f4f4;
   padding: 50px 0;
-  text-align: center;
-}
-
-#servicos h2 {
-  font-size: 24px;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .service {
@@ -97,13 +64,14 @@ nav a {
 }
 
 .service img {
+  gap: 30px;
   max-width: 100%;
   border-radius: 8px;
+ 
 }
 
 /* Estilos do formulário de contato */
 #contato {
-  background-color: rgb(134, 207, 236);
   color: black;
   padding: 50px 0;
 }
